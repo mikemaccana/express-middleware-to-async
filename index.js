@@ -1,6 +1,15 @@
 // https://expressjs.com/en/guide/writing-middleware.html
 const log = console.log.bind(console)
 
+const UTF8 = 'charset=UTF-8'
+
+const TYPES = {
+  HTML: `text/html; ${UTF8}`,
+  JAVASCRIPT: `application/javascript; ${UTF8}`,
+  JSON: `application/json; ${UTF8}`,
+  TEXT: `text/plain; ${UTF8}`
+}
+
 const awsRequestToExpressRequest = function(awsRequest){
   // Convert our AWS request to an Express request (done before the middleware processes it)
   var expressRequest = {
@@ -49,7 +58,7 @@ const wrapExpressMiddleware = function(middleware){
     var arcResponse = {
       body: null,
       status: 200,
-      type: 'application/html'
+      type: TYPES.HTML
     }
 
     return new Promise(function(resolve, reject) {
@@ -61,7 +70,7 @@ const wrapExpressMiddleware = function(middleware){
           resolve(arcResponse);
         },
         json: function(object){
-          arcResponse.type = 'application/json'
+          arcResponse.type = TYPES.JSON
           arcResponse.body = JSON.stringify(object, null, 2)
           resolve(arcResponse);
         },

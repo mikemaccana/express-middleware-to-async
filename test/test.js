@@ -24,7 +24,7 @@ suite(
       const expected = {
         body: `Hello World!`,
         status: 200,
-        type: `application/html`
+        type: `text/html; charset=UTF-8`
       };
       assert.deepEqual(result, expected);
     });
@@ -38,7 +38,7 @@ suite(
       const expected = {
         body: '{\n  "error": "the pretend server broke"\n}',
         status: 500,
-        type: `application/json`
+        type: `application/json; charset=UTF-8`
       };
       assert.deepEqual(result, expected);
     });
