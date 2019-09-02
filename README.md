@@ -1,4 +1,4 @@
-# Express to Arc middleware converter (Experimental)
+# Express to Async/await Middleware converter (Experimental)
 
 Sometimes it's useful to be able to use a single piece of Express middleware in a modern async/await node app, without having to:
 
