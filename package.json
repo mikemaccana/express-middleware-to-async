@@ -1,0 +1,15 @@
+{
+  "name": "express-middleware-to-async",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --ui tdd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
