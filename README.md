@@ -88,4 +88,6 @@ Returns
 
 ## Limits
 
+This was written in a day, and will likely have a few bugs and features to add.
+
 Express middleware that modifies the response but does not send the response is unsupported. In practice such middleware is rare.
