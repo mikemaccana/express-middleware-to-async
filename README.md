@@ -13,7 +13,7 @@ The request and response format used is the [AWS Lambda native async/await forma
 
 ## Wait, you can have middleware without callbacks?
 
-The [arc.codes](https://arc.codes) project, which works with [AWS Lambda's native request and response formats](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html), has documentation on both [async/await HTTP handlers](https://arc.codes/primitives/http) and [async/await middleware](https://arc.codes/primitives/http). 
+The [arc.codes](https://arc.codes) project, which works with [AWS Lambda's native request and response formats](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html), has documentation on both [async/await HTTP handlers](https://arc.codes/primitives/http) and [async/await middleware](https://arc.codes/reference/functions/http/node/async). 
 
 ## Tests
 
