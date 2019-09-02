@@ -1,5 +1,7 @@
 # Express to Async/await Middleware converter (Experimental)
 
+[![CircleCI](https://circleci.com/gh/mikemaccana/express-middleware-to-async.svg?style=svg)](https://circleci.com/gh/mikemaccana/express-middleware-to-async)
+
 Sometimes it's useful to be able to use a single piece of Express middleware in a modern async/await node app, without having to:
 
  - Revert async/await middleware to use callbacks
