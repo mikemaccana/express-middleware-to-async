@@ -7,11 +7,11 @@ Sometimes it's useful to be able to use a single piece of Express middleware in 
 
 This module allows you to wrap Express middleware, turning an asycn/await version of that mmiddleware usable in `arc.http.async`
 
-The request and response format used is the AWS Lambda native async/await format.
+The request and response format used is the [AWS Lambda native async/await format](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html).
 
 ## Wait you can have middleware without callbacks?
 
-The [arc.codes](https://arc.codes) project, which works with AWS Lambda's native request and response formats, has documentation on both [async/await HTTP handlers](https://arc.codes/primitives/http) and [async/await middleware](https://arc.codes/primitives/http). 
+The [arc.codes](https://arc.codes) project, which works with [AWS Lambda's native request and response formats](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html), has documentation on both [async/await HTTP handlers](https://arc.codes/primitives/http) and [async/await middleware](https://arc.codes/primitives/http). 
 
 ## Tests
 
