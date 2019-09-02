@@ -9,6 +9,8 @@ This module allows you to wrap Express middleware, turning an asycn/await versio
 
 The request and response format used is the AWS Lambda native async/await format.
 
+The [arc.codes](https://arc.codes) project, which works with AWS Lambda's native request and response formats, has documentation on both [async/await HTTP handlers](https://arc.codes/primitives/http) and [async/await middleware](https://arc.codes/primitives/http). 
+
 ## Examples:
 
 ### Basic middleware
